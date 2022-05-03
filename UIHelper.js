@@ -14,6 +14,7 @@ function getHostName() {
         and deployed.All other cases point to production.
         */
         const urlMap = {
+            localhost: 'http://localhost:8080/havr-api/',
             test: 'https://svc-test.homeaway.com/havr-api',
             stage: 'https://svc-stage.homeaway.com/havr-api',
             production: 'https://svc.homeaway.com/havr-api'
@@ -88,6 +89,5 @@ module.exports = {
     getEnvironmentName,
     getExtension,
     getHostName,
-    getImageUrlFromName,
-    getMediaGatewayUrl
+    getImageUrlFromName
 };
